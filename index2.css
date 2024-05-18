@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: "montserrat";
+    src: url("font/Montserrat-Regular.ttf") format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("font/Montserrat-Bold.ttf") format("opentype");
+    font-weight: 700;
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'montserrat',sans-serif;
+}
+
+    body {
+        
+        background: radial-gradient(circle, #ffa7c4, #8093f1); 
+          
+      }
+
+.container{
+    height: 700px;
+    width: 500px;
+    border: dotted;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    background:  url("cherie.jpg"); 
+    background-size: cover;
+}
+
+  
+  h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #a52a2a, #1e90ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: 10px;
+  }
+.message{
+  
+    border: none;
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+@media (max-width:515px) {
+    .container{
+        border:none;
+     
+    }
+    body {
+        background: url("cherie.jpg");
+        background-size:cover ;
+        background-position: left;
+    }
+}
+
+@media (max-width:468px){
+    body {
+        background-image: url('cherie.jpg');
+        background: linear-gradient(to bottom right, #FFC0CB, #FF69B4);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: contain;
+      }
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+}
